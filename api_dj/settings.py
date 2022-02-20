@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')# or 'django-insecure-&%i56f$_+1@yks$fx#rx4d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.getenv('SERVER_HOST'),'127.0.0.1',]
 
 
 # Application definition
